@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<title>
+			Femu
+		</title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+		<script type="text/javascript" src="js/factory.js"></script>
+		<script type="text/javascript" src="css/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap-3.1.1/css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<div class="container" ng-app="femuApp" ng-controller="femuCtrl">
+			<h3 class="text-center">
+				Femu
+			</h3>
+			<div class="row" ng-repeat="row in gameRows" data-index="{{$index}}">
+				<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"
+					ng-repeat="game in row">
+					<div class="game text-center" data-index="{{$index}}">
+						{{ game }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<span class="visible-xs"></span>
+	<span class="visible-sm"></span>
+	<span class="visible-md"></span>
+	<span class="visible-lg"></span>
+</html>

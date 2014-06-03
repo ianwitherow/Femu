@@ -1,0 +1,20 @@
+{
+  "name": "Femu",
+  "version": "0.0.1",
+  "description": "Front end for roms for various emulators",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianwitherow/Femu"
+  },
+  "author": "Ian Witherow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianwitherow/Femu/issues"
+  },
+  "homepage": "https://github.com/ianwitherow/Femu"
+}
